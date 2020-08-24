@@ -19,10 +19,10 @@ function listTitles(shelf) {
  return bookTitles.join(", ");
 }
 
-function searchShelf
+
 module.exports = {
   shelfBook: shelfBook,
   unshelfBook: unshelfBook,
   listTitles: listTitles,
-  searchShelf: searchShelf
+  // searchShelf: searchShelf
 };
