@@ -12,14 +12,17 @@ function unshelfBook(book, shelf) {
 }
 
 function listTitles(shelf) {
-  var bookTitles = []
-  for (var i = 0; shelf.length; i++ )
-  titleArray
+  var bookTitles = [];
+  for (var i = 0; i < shelf.length; i++ ) {
+  bookTitles.push(shelf[i].title);
+ }
+ return bookTitles.join(", ");
 }
 
+function searchShelf
 module.exports = {
   shelfBook: shelfBook,
   unshelfBook: unshelfBook,
   listTitles: listTitles,
-  // searchShelf: searchShelf
+  searchShelf: searchShelf
 };
